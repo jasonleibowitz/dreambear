@@ -3,10 +3,25 @@
 <head>
   <title>DreambearApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<nav>
+  <div class="logo">
+    <%= image_tag('logo.png') %>
+  </div>
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to '+Collection', root_path %></li>
+    <li><%= link_to 'Our Method', root_path %></li>
+    <li><%= link_to 'Press', root_path %></li>
+    <li><%= link_to 'Blog', root_path %></li>
+    <li><%= link_to 'Collaborate', root_path %></li>
+  </ul>
+</nav>
 
 <%= yield %>
 
