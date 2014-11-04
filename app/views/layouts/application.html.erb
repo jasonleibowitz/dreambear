@@ -28,8 +28,8 @@
         <ul>
           <li><%= link_to 'Home', root_path %></li>
           <li><%= link_to '+Collection', root_path %></li>
-          <li><%= link_to 'Our Method', root_path %></li>
-          <li><%= link_to 'Press', root_path %></li>
+          <li><%= link_to 'Our Method', our_method_path %></li>
+          <li><%= link_to 'Press', press_path %></li>
           <li><%= link_to 'Blog', root_path %></li>
           <li><%= link_to 'Collaborate', root_path %></li>
         </ul>
@@ -39,21 +39,21 @@
 
 <%= yield %>
 
-<div class="container">
-  <div class="sixteen columns footer">
-    <div class="left">
-      <i class="fa fa-twitter-square fa-2x"></i>
-      <i class="fa fa-facebook-square fa-2x"></i>
-      <i class="fa fa-vimeo-square fa-2x"></i>
-      <i class="fa fa-instagram fa-2x"></i>
-      <i class="fa fa-google-plus-square fa-2x"></i>
-      <i class="fa fa-linkedin-square fa-2x"></i>
-    </div>
-    <div class="right">
-      <p class="legal">Copyright &#169; 2014 Dreambear <%= link_to 'contact us', collaborate_path, class: 'link' %></p>
+  <div class="container">
+    <div class="sixteen columns footer">
+      <div class="left">
+        <i class="fa fa-twitter-square fa-2x"></i>
+        <i class="fa fa-facebook-square fa-2x"></i>
+        <i class="fa fa-vimeo-square fa-2x"></i>
+        <i class="fa fa-instagram fa-2x"></i>
+        <i class="fa fa-google-plus-square fa-2x"></i>
+        <i class="fa fa-linkedin-square fa-2x"></i>
+      </div>
+      <div class="right">
+        <p class="legal">Copyright &#169; 2014 Dreambear <%= link_to 'contact us', collaborate_path, class: 'link' %></p>
+      </div>
     </div>
   </div>
-</div>
 
 </body>
 </html>
