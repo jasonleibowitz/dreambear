@@ -16,6 +16,7 @@ gem "paperclip", "~> 4.2"
 gem "figaro"
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
+  gem 'pry-rails'
 end
 group :development do
   gem "better_errors"

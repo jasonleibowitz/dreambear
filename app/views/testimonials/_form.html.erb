@@ -1,0 +1,14 @@
+<% form_for @testimonial do |f| %>
+
+  <%= f.label :text %>
+  <%= f.text_field :text %>
+
+  <%= f.label :link %>
+  <%= f.text_field :link %>
+
+  <%= f.label :commentor %>
+  <%= f.text_field :commentor %>
+
+  <%= f.submit %>
+
+<% end %>
