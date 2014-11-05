@@ -1,11 +1,9 @@
 $(document).ready(function(){
 
   // nav bar animation
-  homeTop = $('.home').position().top;
   $(window).scroll(function(){
     var scrolled = $(window).scrollTop();
     if (scrolled > '100'){
-      console.log('hi');
       navFadeOut();
     } else if (scrolled < '100'){
       navFadeIn();
@@ -18,13 +16,14 @@ $(document).ready(function(){
 var navFadeOut = function(){
   $('.logo').addClass('animated fadeOutUp');
   setTimeout(function(){
-    $('.logo').css('display', 'none');
+    $('.nav-section').css('top', '-100px');
     $('.text-logo').css('display', 'block');
-  }, 200);
+  }, 100);
 }
 
 var navFadeIn = function(){
   $('.text-logo').css('display', 'none')
-  $('.logo').css('display', 'block');
+  $('.nav-section').css('top', 0);
+  $('.text-logo').css('display', 'none');
   $('.logo').removeClass('fadeOutUp').addClass('fadeInDown');
 }

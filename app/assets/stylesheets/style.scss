@@ -19,10 +19,19 @@ body {
   background: url(image_path('background.png'));
   z-index: 10;
   position: fixed;
+  width: 100%;
   top: 0;
-  width: 75%;
-  left: 50%;
-  margin: 0 0 0 -40%;
+  transition: top .5s;
+  -webkit-transition: top .5s;
+  -moz-transition: top .5;
+}
+
+.nav-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  // width: 100%/px;
+  text-align: center;
 }
 
 .logo {
@@ -73,11 +82,12 @@ nav {
 .hero-vid-wrap {
   text-align: center;
   overflow: hidden;
+  margin-bottom: 60px;
 }
 
   .hero-vid {
     width: 100%;
-    margin-top: 250px;
+    margin-top: 150px;
   }
 
 ///////////////////////////////////
@@ -137,3 +147,89 @@ nav {
   float: right;
   right: 0;
 }
+
+///////////////////////////////////
+//////////// OUR METHOD ///////////
+///////////////////////////////////
+
+.our_method {
+
+}
+
+  h1, h3, h4 {
+    color: $dreambear-orange;
+  }
+
+  h1 {
+    margin-bottom: 75px;
+  }
+
+  h3 {
+    font-style: italic;
+    text-align: center;
+    font-size: 21px;
+    // font-family: "proxima-nova";
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    // font-family: 'refrigerator-deluxe';
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  p.about-text {
+    // font-family: "avenir";
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+
+  .buzzword {
+    text-align: center;
+  }
+
+///////////////////////////////////
+/////////////// PRESS /////////////
+///////////////////////////////////
+
+.press {
+
+}
+
+  h3 {
+    color: $dreambear-orange;
+    // font-family: 'refrigerator-deluxe';
+    font-size: 25px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  p.byline:before {
+    content: '- ';
+  }
+
+  p.byline {
+    font-size: 15px;
+    text-align: left;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $dreambear-orange;
+    transition: color .5s;
+  }
+
+  a:hover {
+    color: black;
+  }

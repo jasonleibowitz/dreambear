@@ -14,26 +14,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container nav-section">
-    <div class="sixteen columns">
-      <div class="logo">
-        <%= image_tag('logo.png') %>
+  <div class="nav-section">
+    <div class="sixteen columns nav-wrap">
+      <div class="sixteen columns">
+        <div class="logo">
+          <%= image_tag('logo.png') %>
+        </div>
+        <div class="text-logo">
+          <p>dreambear</p>
+        </div>
       </div>
-      <div class="text-logo">
-        <p>dreambear</p>
+      <div class="sixteen columns">
+        <nav>
+          <ul>
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to '+Collection', root_path %></li>
+            <li><%= link_to 'Our Method', our_method_path %></li>
+            <li><%= link_to 'Press', press_path %></li>
+            <li><%= link_to 'Blog', root_path %></li>
+            <li><%= link_to 'Collaborate', root_path %></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <div class="sixteen columns">
-      <nav>
-        <ul>
-          <li><%= link_to 'Home', root_path %></li>
-          <li><%= link_to '+Collection', root_path %></li>
-          <li><%= link_to 'Our Method', our_method_path %></li>
-          <li><%= link_to 'Press', press_path %></li>
-          <li><%= link_to 'Blog', root_path %></li>
-          <li><%= link_to 'Collaborate', root_path %></li>
-        </ul>
-      </nav>
     </div>
   </div>
 
