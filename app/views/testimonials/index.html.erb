@@ -7,8 +7,8 @@
   <div class="container">
     <% @testimonials.each do |testimonial| %>
     <div class="sixteen columns">
-      <h3><a href="<%= @testimonial.link %>"><%= @testimonial.text %></a></h3>
-      <p class="byline"><%= @testimonial.commentor %></p>
+      <h3 class="testimonial"><a href="<%= testimonial.link %>"><%= testimonial.text %></a></h3>
+      <p class="byline"><%= testimonial.commentor %></p>
     </div>
     <% end %>
   </div>

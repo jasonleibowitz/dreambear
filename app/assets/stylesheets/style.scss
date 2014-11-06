@@ -87,7 +87,7 @@ nav {
 
   .hero-vid {
     width: 100%;
-    margin-top: 150px;
+    // margin-top: 150px;
   }
 
 ///////////////////////////////////
@@ -199,7 +199,7 @@ nav {
 ///////////////////////////////////
 
 .press {
-
+  margin-top: 250px;
 }
 
   h3 {
@@ -214,6 +214,10 @@ nav {
     font-style: normal;
   }
 
+  h3.testimonial:before, h3.testimonial:after {
+    content: '"'
+  }
+
   p.byline:before {
     content: '- ';
   }
@@ -224,7 +228,7 @@ nav {
     padding: 0;
   }
 
-  a {
+  a, a:visited {
     text-decoration: none;
     color: $dreambear-orange;
     transition: color .5s;

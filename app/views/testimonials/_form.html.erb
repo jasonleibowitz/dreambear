@@ -1,7 +1,7 @@
-<% form_for @testimonial do |f| %>
+<%= form_for @testimonial do |f| %>
 
   <%= f.label :text %>
-  <%= f.text_field :text %>
+  <%= f.text_area :text %>
 
   <%= f.label :link %>
   <%= f.text_field :link %>

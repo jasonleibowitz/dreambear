@@ -17,7 +17,22 @@ class TestimonialsController < ApplicationController
     if @testimonial.valid?
       @testimonial.save!
     end
-    render @testimonials
+    redirect_to press_path
+  end
+
+  def edit
+    @testimonial = Testimonial.find(params[:id])
+  end
+
+  def update
+    @testimonial = Testimonial.find(params[:id])
+    @testimonial.update(testimonial_params)
+    redirect_to press_path
+  end
+
+  private
+  def testimonial_params
+    params.require(:testimonial).permit(:text, :link, :commentor)
   end
 
 end
