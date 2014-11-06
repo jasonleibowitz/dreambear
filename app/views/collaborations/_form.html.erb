@@ -1,0 +1,11 @@
+<%= form_for @collaboration do |f| %>
+
+  <%= f.label :category %>
+  <%= select_tag(:category, options_for_select([['Artist', 'Artist'], ['Corporate', 'Corporate']])) %>
+
+  <%= f.label :link %>
+  <%= f.text_field :link %>
+
+  <%= f.submit %>
+
+<% end %>

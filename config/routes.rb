@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get '/press/new', to: 'testimonials#new'
   get '/collaborate', to: 'home#collaborate'
   resources :testimonials
+  resources :collaborations
   root to: 'home#welcome'
 end
