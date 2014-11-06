@@ -1,7 +1,10 @@
 <%= form_for @collaboration do |f| %>
 
   <%= f.label :category %>
-  <%= select_tag(:category, options_for_select([['Artist', 'Artist'], ['Corporate', 'Corporate']])) %>
+  <%= f.select(:category, options_for_select([['Artist', 'Artist'], ['Corporate', 'Corporate']])) %>
+
+  <%= f.label :logo %>
+  <%= f.file_field :logo %>
 
   <%= f.label :link %>
   <%= f.text_field :link %>

@@ -1,0 +1,57 @@
+<div class="collaborate-page">
+  <div class="container">
+    <div class="sixteen columns hero-vid-wrap">
+      <%= video_tag 'collaborate.webm', autoplay: true, :loop => true, class: 'hero-vid' %>
+    </div>
+  </div>
+  <div class="container">
+    <div class="sixteen columns">
+      <h3>Collaborate with Us</h3>
+      <iframe src="//player.vimeo.com/video/80154703" width="500" height="281" class="collaborate-video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="sixteen columns">
+    </div>
+  </div>
+  <div class="container">
+    <div class="sixteen columns">
+      <p>We want to hear from you. Let us know a little about yourself and we'll quickly get back to you. You can also email us at <a href="mailto:hello@dreambear.org">hello@dreambear.org</a>.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sixteen columns">
+      <hr>
+      <h3>Stay Connected</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sixteen columns artists">
+      <h3>Collaborations: Artists</h3>
+    </div>
+    <div class="sixteencolumns">
+      <% @artists.each do |artist| %>
+        <a href="<%= artist.link %>" target="_blank"><%= image_tag artist.logo.url(:medium), class: 'artist' %></a>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sixteen columns corporate">
+      <h3>Collaborations: Corporate</h3>
+    </div>
+    <div class="sixteen columns">
+      <% @corporations.each do |corporate| %>
+        <a href="<%= corporate.link %>" target="_blank"><%= image_tag corporate.logo.url(:medium), class: 'artist' %></a>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sixteen columns">
+      <p>Site designed by <a href="http://www.sarah.quatrano.com/">Sarah Quatrano</a>. Developed by <a href="http://www.jasonleibowitz.org/">Jason Leibowitz</a>.</p>
+    </div>
+  </div>
+</div>
+

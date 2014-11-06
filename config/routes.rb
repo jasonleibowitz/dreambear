@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get '/our_method', to: 'home#our_method'
   get '/press', to: 'testimonials#index'
   get '/press/new', to: 'testimonials#new'
-  get '/collaborate', to: 'home#collaborate'
+  get '/collaborate', to: 'collaborations#index'
   resources :testimonials
   resources :collaborations
   root to: 'home#welcome'

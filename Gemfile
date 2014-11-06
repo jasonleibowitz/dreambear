@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'devise'
 gem "paperclip", "~> 4.2"
+gem 'aws-sdk', '~> 1.5.7'
 gem "figaro"
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
@@ -19,4 +20,5 @@ group :development, :test do
 end
 group :development do
   gem "better_errors"
+  gem "binding_of_caller"
 end
