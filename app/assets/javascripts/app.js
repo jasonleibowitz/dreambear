@@ -8,7 +8,14 @@ $(document).ready(function(){
     } else if (scrolled < '100'){
       navFadeIn();
     }
+  });
 
+  // set current page's nav link to active
+  $('.nav-links').children('li').each(function(index){
+    // debugger
+    if ($('.' + $(this).children('a').attr('id') + '-page' ).length > 0) {
+      $('#' + $(this).children('a').attr('id')).addClass('active');
+    }
   });
 
 });

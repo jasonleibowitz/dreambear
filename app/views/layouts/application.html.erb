@@ -26,13 +26,13 @@
       </div>
       <div class="sixteen columns">
         <nav>
-          <ul>
-            <li><%= link_to 'Home', root_path %></li>
-            <li><%= link_to '+Collection', root_path %></li>
-            <li><%= link_to 'Our Method', our_method_path %></li>
-            <li><%= link_to 'Press', press_path %></li>
-            <li><%= link_to 'Blog', root_path %></li>
-            <li><%= link_to 'Collaborate', root_path %></li>
+          <ul class="nav-links">
+            <li><%= link_to 'Home', root_path, id: 'home' %></li>
+            <li><%= link_to '+Collection', root_path, id: 'collection' %></li>
+            <li><%= link_to 'Our Method', our_method_path, id: 'our_method' %></li>
+            <li><%= link_to 'Press', press_path, id: 'press' %></li>
+            <li><%= link_to 'Blog', root_path, id: 'blog' %></li>
+            <li><%= link_to 'Collaborate', root_path, id: 'collaborate' %></li>
           </ul>
         </nav>
       </div>

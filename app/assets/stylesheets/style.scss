@@ -70,9 +70,14 @@ nav {
       margin-right: 20px;
     }
 
-    a {
-      text-decoration: none;
-    }
+      a {
+        text-decoration: none;
+      }
+
+      a.active {
+        color: $dreambear-orange;
+      }
+
 
 .link {
   color: $dreambear-orange;
@@ -94,7 +99,7 @@ nav {
 /////////////// HOME //////////////
 ///////////////////////////////////
 
-.home {
+.home-page {
   font-family: $font-stack;
   margin-top: 200px;
 }
@@ -152,7 +157,7 @@ nav {
 //////////// OUR METHOD ///////////
 ///////////////////////////////////
 
-.our_method {
+.our_method-page {
 
 }
 
@@ -198,7 +203,7 @@ nav {
 /////////////// PRESS /////////////
 ///////////////////////////////////
 
-.press {
+.press-page {
   margin-top: 250px;
 }
 
@@ -228,12 +233,12 @@ nav {
     padding: 0;
   }
 
-  a, a:visited {
+  .press-page>a, .press>a:visited {
     text-decoration: none;
     color: $dreambear-orange;
     transition: color .5s;
   }
 
-  a:hover {
+  .press-page>a:hover {
     color: black;
   }
