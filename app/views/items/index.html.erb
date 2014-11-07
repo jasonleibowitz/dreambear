@@ -1,0 +1,9 @@
+<div class="collection-page">
+  <div class="container music-videos">
+    <div class="sixteen columns">
+      <% @music_videos.each do |music_video| %>
+        <a href="<%= root_path %>"><%= image_tag music_video.thumbnail.url(:medium), class: 'music_video' %></a>
+      <% end %>
+    </div>
+  </div>
+</div>
