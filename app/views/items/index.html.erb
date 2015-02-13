@@ -1,8 +1,16 @@
 <div class="collection-page">
   <div class="container music-videos">
     <div class="sixteen columns">
-      <% @music_videos.each do |music_video| %>
-        <a href="<%= root_path %>"><%= image_tag music_video.thumbnail.url(:medium), class: 'music_video' %></a>
+      <% @items.each do |item| %>
+        <div class="music-video-img-wrap">
+          <%= image_tag item.thumbnail.url(:medium), class: 'music_video' %>
+          <div class="video-overlay">
+            <a href="<%= item.link %>"><%= image_tag 'play-button-overlay.png' %></a>
+          </div>
+          <div class="description-overlay">
+            <p class="music-video-description"><%= item.title %></p>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>

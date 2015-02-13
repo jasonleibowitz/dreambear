@@ -275,3 +275,43 @@ nav {
   margin-top: 250px;
 }
 
+.music-video-img-wrap {
+  position: relative;
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.music-video-img-wrap img {
+  height: 169px;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 169px;
+  z-index: 20;
+}
+
+.description-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0;
+  padding-top: 15px;
+  z-index: 10;
+  margin-bottom: 5px;
+}
+
+.music-video-description {
+  position: relative;
+  bottom: 0;
+  color: white;
+  padding: 0;
+  font-style: bold;
+
+}
+

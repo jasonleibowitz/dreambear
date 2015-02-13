@@ -1,11 +1,18 @@
 class ItemsController < ApplicationController
 
   def index
-    @items = Item.all
-    @music_videos = Item.where(category: 'Music Video')
-    @commercials = Item.where(category: "Commercial")
-    @films = Item.where(category: "Film")
-    @songs = Item.where(category: "Music")
+    page_name = params[:id].downcase
+    binding.pry
+    case page_name
+    when "music_videos"
+      @items = Item.where(category: 'Music Video')
+    when "commercials"
+      @items = Item.where(category: "Commercial")
+    when "film"
+      @items = Item.where(category: "Film")
+    when "music"
+      @items = Item.where(category: "Music")
+    end
   end
 
   def show
